@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Field, reduxForm, formValueSelector } from 'redux-form';
 import { Link } from 'react-router-dom';
+import { createPost } from '../actions';
 
 class PostsNew extends Component {
   renderTitleField(field) {
@@ -136,22 +137,25 @@ PostsNew = reduxForm({
 })(PostsNew);
 
 const selector = formValueSelector('PostsNewForm');
-PostsNew = connect(state => {
-  // can select values individually
-  const title = selector(state, 'title');
-  const category = selector(state, 'category');
-  const content = selector(state, 'content');
-  const hasRefsValue = selector(state, 'hasReferences');
-  const refsValue = selector(state, 'references');
+PostsNew = connect(
+  state => {
+    // can select values individually
+    const title = selector(state, 'title');
+    const category = selector(state, 'category');
+    const content = selector(state, 'content');
+    const hasRefsValue = selector(state, 'hasReferences');
+    const refsValue = selector(state, 'references');
 
-  // props
-  return {
-    title,
-    category,
-    content,
-    hasRefsValue,
-    refsValue
-  };
-})(PostsNew);
+    // props
+    return {
+      title,
+      category,
+      content,
+      hasRefsValue,
+      refsValue
+    };
+  },
+  { createPost }
+)(PostsNew);
 
 export default PostsNew;

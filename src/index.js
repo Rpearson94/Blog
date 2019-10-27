@@ -7,8 +7,9 @@ import { Provider } from 'react-redux';
 // import App from './components/App';
 import rootReducer from './reducers';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import PostsIndex from './containers/posts_index';
+import PostsNew from './containers/posts_new';
 import ReduxPromise from 'redux-promise';
 
 const store = createStore(
@@ -21,8 +22,11 @@ ReactDOM.render(
   <Provider store={store}>
     <BrowserRouter>
       <div>
-        <Route path='/api/posts' component={PostsIndex} />
-        <Route exact path='/' component={PostsIndex} />
+        <Switch>
+          <Route path='/api/posts/new' component={PostsNew} />
+          <Route exact path='/' component={PostsIndex} />
+          <Route path='/api/posts' component={PostsIndex} />
+        </Switch>
       </div>
     </BrowserRouter>
   </Provider>,

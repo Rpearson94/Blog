@@ -1,0 +1,41 @@
+commit 8fa1394e38e13bdcbc1cfe8ca7bb2404fb7e229b
+Author: Ryan Pearson <rpearson1994@icloud.com>
+Date:   Sun Oct 27 12:49:52 2019 -0400
+
+    Final commit.
+
+commit b050f30081dc53a9588bbf9b96a05abf098496bd
+Author: Ryan Pearson <rpearson1994@icloud.com>
+Date:   Sun Oct 27 12:43:33 2019 -0400
+
+    Updated the new post page to include all fields.
+
+commit ff7b65c2dc83e7fcddf94f89757ecfb5a5155efb
+Author: Ryan Pearson <rpearson1994@icloud.com>
+Date:   Sun Oct 27 12:29:29 2019 -0400
+
+    Added button to page to create a new post.
+
+commit 3668c615312a0f0a8000a9c95430cc627921e21a
+Author: Ryan Pearson <rpearson1994@icloud.com>
+Date:   Sun Oct 27 12:19:33 2019 -0400
+
+    Updated App to view posts.
+
+commit bea4bbae4ece3b76bfcbaed733f274d427e836f8
+Author: Ryan Pearson <rpearson1994@icloud.com>
+Date:   Mon Oct 21 17:54:19 2019 -0400
+
+    Created components and reducers folder.
+
+commit 6ac3ac463f10a8bb1ca94dc05c0cd2cefd8752bc
+Author: Ryan Pearson <rpearson1994@icloud.com>
+Date:   Mon Oct 21 17:51:15 2019 -0400
+
+    created a new react app
+
+commit fac9d450b3f3f021079d1449018d6d8d2a5844c4
+Author: Ryan Pearson <rpearson1994@icloud.com>
+Date:   Mon Oct 21 17:50:33 2019 -0400
+
+    Initial commit from Create React App

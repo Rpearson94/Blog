@@ -1,9 +1,11 @@
 import axios from 'axios';
 import _ from 'lodash';
+
 export const FETCH_POSTS = 'fetch_posts';
 export const CREATE_POST = 'create_post';
 export const FETCH_POST = 'fetch_post';
 export const DELETE_POST = 'delete_post';
+export const UPDATE_POST = 'update_post';
 
 const ROOT_URL = 'https://blog-server-ryan-pearson.herokuapp.com/api';
 
@@ -47,5 +49,20 @@ export function deletePost(id, callback) {
   return {
     type: DELETE_POST,
     payload: id
+  };
+}
+
+export function updatePost(values, callback) {
+  if (!values.hasReferences || values.hasReferences === false)
+    values = _.omit(values, 'references');
+
+  // (!values.hasReferences || values.hasReferences===false) ? _.omit(values, { "references"}) : values
+  const request = axios
+    .put(`${ROOT_URL}/posts/${values._id}`, values)
+    .then(() => callback());
+
+  return {
+    type: UPDATE_POST,
+    payload: request
   };
 }

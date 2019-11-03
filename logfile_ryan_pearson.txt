@@ -1,3 +1,39 @@
+commit e8657ef12d9d81384e9444dbdb7a2b0838bf9942
+Author: Ryan Pearson <rpearson1994@icloud.com>
+Date:   Sun Nov 3 15:42:49 2019 -0500
+
+    Added missing import.
+
+commit a185867b68e6cfa3f776cc60ebc0ed0ade9cbac9
+Author: Ryan Pearson <rpearson1994@icloud.com>
+Date:   Sun Nov 3 15:37:06 2019 -0500
+
+    final commit
+
+commit 9e6c1d07ec325d296d4c5f05c93516ed5fa236b8
+Author: Ryan Pearson <rpearson1994@icloud.com>
+Date:   Thu Oct 31 14:14:30 2019 -0400
+
+    Updated code.
+
+commit c7f40cf67a55a5e0fabb53a87ee3dca37c6dd85e
+Author: Ryan Pearson <rpearson1994@icloud.com>
+Date:   Thu Oct 31 14:10:03 2019 -0400
+
+    completed 5
+
+commit 46c8d1a4a92ff10dfd423d5278c312bb9f218258
+Author: Ryan Pearson <rpearson1994@icloud.com>
+Date:   Thu Oct 31 14:01:23 2019 -0400
+
+    completed 4.6
+
+commit 0b7c1da871a8a8e2743926879e1fe06fde1adbc1
+Author: Ryan Pearson <rpearson1994@icloud.com>
+Date:   Sun Oct 27 12:54:58 2019 -0400
+
+    Added Logfile.
+
 commit 8fa1394e38e13bdcbc1cfe8ca7bb2404fb7e229b
 Author: Ryan Pearson <rpearson1994@icloud.com>
 Date:   Sun Oct 27 12:49:52 2019 -0400

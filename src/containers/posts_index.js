@@ -1,13 +1,16 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { fetchPosts } from '../actions/index';
-import _ from 'lodash';
+
 import { Link } from 'react-router-dom';
+
+import _ from 'lodash';
 
 class PostsIndex extends Component {
   componentDidMount() {
     this.props.fetchPosts();
   }
+
   renderPosts() {
     return _.map(this.props.posts, post => {
       return (
@@ -19,7 +22,8 @@ class PostsIndex extends Component {
   }
 
   render() {
-    // console.log(this.props.posts);
+    //console.log(this.props.posts);
+
     return (
       <div className='container'>
         <div className='float-right'>

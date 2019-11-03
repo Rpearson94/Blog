@@ -12,6 +12,8 @@ export default function(state = {}, action) {
       return newState;
     case DELETE_POST:
       return _.omit(state, action.payload);
+    case UPDATE_POST:
+      return _.merge(state, action.payload);
     default:
       return state;
   }

@@ -12,6 +12,7 @@ import PostsIndex from './containers/posts_index';
 import PostsNew from './containers/posts_new';
 import ReduxPromise from 'redux-promise';
 import PostsShow from './containers/posts_show';
+import PostsEdit from './containers/posts_edit';
 
 const store = createStore(
   rootReducer,
